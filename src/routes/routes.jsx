@@ -12,7 +12,7 @@ export const LIST_ROUTES = [
         element: <Listing />
     },
     {
-        path: '/detail:id',
+        path: '/detail/:id',
         element: <Detail />
     }
 ]

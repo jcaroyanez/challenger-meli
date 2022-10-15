@@ -28,6 +28,10 @@
         padding: 15px 0 15px 24px;
     }
 
+    &__card-content-price {
+        display: flex;
+    }
+
     &__title {
         color: #333;
         font-weight: 300;
@@ -36,6 +40,10 @@
 
 .price-simbol {
     margin-right: 5px;
+}
+
+.price-mount {
+    margin-right: 10px;
 }
 
 .price-simbol, .price-mount {

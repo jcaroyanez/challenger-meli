@@ -1,5 +1,5 @@
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import useItems from '../../hooks/items'
+import { useItems } from '../../hooks/items'
 import Search from '../Search/Search'
 import Container from '../shared/Container/Container'
 import Header from '../shared/Header/Header'
