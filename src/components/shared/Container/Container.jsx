@@ -1,11 +1,15 @@
 import './Container.scss'
+import clsx from 'clsx'
 
-const Container = ({ children }) => {
-    return (
-      <div className='container'>
-        {children}
-      </div>
-    )
+const Container = ({ children, className = null }) => {
+  return (
+    <div className={clsx('container', {
+      [className]: className
+    })}
+    >
+      {children}
+    </div>
+  )
 }
 
 export default Container

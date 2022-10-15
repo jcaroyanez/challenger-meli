@@ -8,7 +8,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // eslint-disable-next-line quotes
-        additionalData: `@import "./src/assets/styles/_variables.scss";`
+        additionalData: `@import "./src/styles/_variables.scss";`
       }
     }
   }

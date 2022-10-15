@@ -1,6 +1,6 @@
-import Home from '../components/home/Home'
-import Listing from '../components/listing/Listing'
-import Detail from '../components/detail/Detail'
+import Home from '../components/Home/Home'
+import Listing from '../components/Listing/Listing'
+import Detail from '../components/Detail/Detail'
 
 export const LIST_ROUTES = [
     {
@@ -12,7 +12,7 @@ export const LIST_ROUTES = [
         element: <Listing />
     },
     {
-        path: 'Detail',
+        path: '/detail:id',
         element: <Detail />
     }
 ]

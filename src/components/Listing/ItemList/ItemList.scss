@@ -1,0 +1,45 @@
+.search-list-item {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+        border: none;    
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__card {
+        position: relative;
+        height: 200px;
+        display: flex;
+        background-color: #fff;
+        padding: 20px 50px;
+    }
+
+    &__card-state {
+        position: absolute;
+        right: 70px;
+        color: #726f6f;
+    }
+
+    &__card-content-info {
+        padding: 15px 0 15px 24px;
+    }
+
+    &__title {
+        color: #333;
+        font-weight: 300;
+    }
+}
+
+.price-simbol {
+    margin-right: 5px;
+}
+
+.price-simbol, .price-mount {
+    font-size: 26px;
+    color: #333;
+    font-weight: 400;
+}
