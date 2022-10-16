@@ -1,13 +1,8 @@
-import { useParams } from 'react-router'
-import { useItem } from '../../../hooks/items'
 import InfoPriceItem from '../InfoPriceItem/InfoPriceItem'
 import './DetailItem.scss'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
-const DetailItem = () => {
-    const { id } = useParams()
-    const { item } = useItem(id)
-
+const DetailItem = ({ item }) => {
     return (
       <>
         {item &&

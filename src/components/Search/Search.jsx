@@ -1,19 +1,28 @@
+import { useState } from 'react'
 import IcSearch from '../uiCons/UICsearch/UICsearch'
 import './Search.scss'
 
 const Search = ({ onInputValue, inputValue }) => {
+  const [textInput, setTextInput] = useState()
+
   const handlerSubmit = e => {
     e.preventDefault()
-    const value = e.target.textInput.value
-    if (value) {
-      onInputValue(value)
+
+    if (textInput) {
+      onInputValue(textInput)
     }
+  }
+
+  const handlerChange = event => {
+    setTextInput(event.target.value)
   }
 
   return (
     <form onSubmit={handlerSubmit} className='content-search'>
       <input
+        key={inputValue}
         defaultValue={inputValue}
+        onChange={handlerChange}
         autoCorrect='off'
         autoComplete='off'
         className='search-input'
