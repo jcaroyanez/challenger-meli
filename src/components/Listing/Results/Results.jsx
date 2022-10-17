@@ -1,7 +1,7 @@
 import ItemCard from '../ItemList/ItemList'
 import './Result.scss'
 
-const Result = ({ items = [] }) => {
+const Result = ({ items }) => {
     return (
       <section>
         <ol className='list-item'>

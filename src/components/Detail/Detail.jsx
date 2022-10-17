@@ -1,21 +1,18 @@
-import { useNavigate } from 'react-router'
-import Search from '../Search/Search'
+import { useParams } from 'react-router'
+import { useItem } from '../../hooks/items'
 import Container from '../shared/Container/Container'
-import Header from '../shared/Header/Header'
 import DetailItem from './DetailItem/DetailItem'
+import SkeletonDetailItem from './SkeletonDetailItem/SkeletonDetailItem'
 
 const Detail = () => {
-  const navigate = useNavigate()
-  const onInputValue = textValue => {
-    navigate(`/items?search=${textValue}`)
-  }
+  const { id } = useParams()
+  const { data, error } = useItem(id)
+  const loading = !data && !error
+
   return (
     <>
-      <Header>
-        <Search onInputValue={onInputValue} />
-      </Header>
       <Container>
-        <DetailItem />
+        {loading ? <SkeletonDetailItem /> : <DetailItem item={data?.item} />}
       </Container>
     </>
   )

@@ -1,9 +1,15 @@
+.wraper-scroll {
+ overflow: auto;
+}
+
 .content-detail {
-    margin-top: 16px;
+    margin: 16px 0;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding-top: 20px;
+    border-radius: 4px;
+    min-width: $lg;
 
     &__first-column {
         display: flex;

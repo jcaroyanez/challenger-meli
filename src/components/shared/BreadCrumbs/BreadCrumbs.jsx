@@ -2,12 +2,12 @@ import UICrightArrow from '../../uiCons/UICrightArrow/UICrightArrow'
 import './BreadCrumbs.scss'
 
 const BreadCrumbs = ({ categories }) => {
-  const lastIndex = categories.length - 1
+  const lastIndex = categories?.length - 1
 
   return (
     <nav>
       <ol className='nav-breadcrumbs'>
-        {categories.map((category, index) =>
+        {categories?.map((category, index) =>
           <li key={index} className='nav-breadcrumbs__item'>
             <span className='nav-breadcrumbs__text'>{category}</span>
             {lastIndex !== index &&
