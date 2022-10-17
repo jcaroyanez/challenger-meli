@@ -1,6 +1,6 @@
 # Comenzar a correr el proyecto con vite
 
-## scritp disponibles
+## Scritp disponibles
 
 para correr el proyecto en modo dev
 ```sh
@@ -13,7 +13,7 @@ npm run build
 npm run preview
 ```
 
-## api
+## Api
 
 este proyecto esta conectado con una api local, link del repositorio (https://github.com/jcaroyanez/api-meli)
 
