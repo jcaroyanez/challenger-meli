@@ -28,9 +28,11 @@ const Search = ({ onInputValue, inputValue }) => {
         className='search-input'
         name='textInput'
         placeholder='Nunca dejes de buscar'
+        tabIndex='0'
+        aria-label='Ingresa lo que quieras encontrar'
       />
 
-      <button className='search-btn'>
+      <button className='search-btn' aria-label='Buscar'>
         <IcSearch width={20} heigth={20} fill='#666' />
       </button>
     </form>

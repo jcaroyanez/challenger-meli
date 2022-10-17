@@ -1,21 +1,7 @@
 import Home from '../components/Home/Home'
 import Listing from '../components/Listing/Listing'
 import Detail from '../components/Detail/Detail'
-
-/* export const LIST_ROUTES = [
-    {
-        path: '/',
-        element: <Home />
-    },
-    {
-        path: '/items',
-        element: <Listing />
-    },
-    {
-        path: '/detail/:id',
-        element: <Detail />
-    }
-] */
+import NotFound from '../components/NotFound/NotFound'
 
 export const LIST_ROUTES = [
     {
@@ -27,8 +13,16 @@ export const LIST_ROUTES = [
                 element: <Listing />
             },
             {
-                path: '/detail/:id',
+                path: '/items/:id',
                 element: <Detail />
+            },
+            {
+                path: '/:id',
+                element: <Detail />
+            },
+            {
+                path: '*',
+                element: <NotFound />
             }
         ]
 }]
